@@ -1,0 +1,11 @@
+@model challenge.Models.TestModel
+
+@{
+    ViewBag.Title = "Test";
+}
+
+<form action="test/display" method="post">
+    <input type="text" name="name" placeholder="Name" /><br />
+    <input type="text" name="text" placeholder="Text" /><br />
+    <input type="submit" value="Display">
+</form>
