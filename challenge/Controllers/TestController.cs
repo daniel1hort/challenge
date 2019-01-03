@@ -6,20 +6,19 @@ namespace challenge.Controllers
 {
     public class TestController : Controller
     {
-        [Route("test")]
-        public IActionResult Index()
+        public IActionResult Index(string name, string text)
         {
-            return View();
-        }
+            TestModel test;
 
-        [HttpPost]
-        [Route("test/display")]
-        public IActionResult DisplayTest(string name, string text)
-        {
-            TestModel test = new TestModel{
-                Name = name,
-                Text = text
-            };
+            if(!string.IsNullOrWhiteSpace(name) && !string.IsNullOrWhiteSpace(text))
+            {
+                test = new TestModel{
+                    Name = name,
+                    Text = text
+                };
+            }
+            else
+                test = null;
 
             return View(test);
         }

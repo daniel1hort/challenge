@@ -1,0 +1,25 @@
+.mycontainer{
+    margin-top: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.myform .myform-control{
+    margin-bottom: 0.7em;
+    padding: 0.35em;
+    width: 100%;
+}
+.myform .myform-control[type=submit]{
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    padding: 0.4em 1em;
+    margin-top: 0;
+    transition: 0.4s;
+}
+.myform .myform-control[type=submit]:hover{
+    background-color: #aaa;
+}
+
+.myname{
+    color: #9b0606;
+    font-weight: bolder;
+}
